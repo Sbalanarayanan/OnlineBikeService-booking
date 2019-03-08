@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+<style>
+body {
+	background: url("adminlogin.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 210px;
+	padding-right: 570px;
+	font-family: Times New Roman;
+	font-size: 24px;
+	color: white;
+}
+
+form {
+	display: inline-block;
+}
+</style>
+</head>
+<body>
+	<form method="post" action="AdminServlet">
+		<table>
+			<tbody>
+				<tr align="center">
+					<td></td>
+					<td><h4>Admin Login</h4></td>
+				</tr>
+				<tr>
+					<td align="left">phone:</td>
+					<td><input type="number" maxlength="10" name="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td align="left">password:</td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button style="width: 70px;" type="submit">Login</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
